@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Cruz Barber- Contact us</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <section id="navbar">
+            <img src="images/alex-logo.png" class="logo">
+            <div banertext class="banner-text">
+                <div class="titlecontactus"><h1>Contact us to</h1></div>
+                <h2>Book an appointment</h2><br>
+                
+            </div>
+            <div class="cards">
+            <img src="images/phone.jpg" class="card" onclick="openCall()" >
+            <img src="images/snapchat.png" class="card" onclick="openSnap()">
+            <img src="images/location.png" class="card" onclick="openMap()">
+            </div>     
+            <div class="call" id="call">
+                <img src="images/call1.jpg">
+                <h1>Alex Cruz</h1><br>
+                <h3 class="title">Owner & CEO</h3>
+                <h3 class="title">Alex Cruz Barber</h3>          
+                <a href="tel:6203390092" id="btnCall"><i class="fa fa-phone" ></i>  Call</a>
+                <button type="button" onclick="closeCall()">x</button>
+            </div>    
+            
+            <div class="snap" id="snap">
+                <img src="images/alexsnapchat.png">
+                    <a href="https://www.snapchat.com/add/alex_cruz90" id="btnSnap">Go to Snapchat</a>
+                    <button type="button" onclick="closeSnap()">x </button>
+            </div>
+            <div class="map" id="map">
+                <img src="images/map.png">
+                <a href="https://goo.gl/maps/J4VHS7bQ6vFMUG376" id="btnMap"><i class="fa fa-location"></i> Open  Location </a>
+                <button type="button" onclick="closeMap()">x </button> 
+            </div>
+             
+            
+        </section> 
+        
+        
+        <div id="sidenav">
+            <nav>
+                <ul class="links main-nav mobile-hide">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="contactus.html">GET AN APPOINTMENT</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="haircutalbum.html">HAIRCUTS</a></li>
+                </ul>    
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="images/menu-icon.jpg" id="menu">
+        </div>
+        <script>
+            var menuBtn= document.getElementById("menuBtn")
+            var sidenav= document.getElementById("sidenav")
+             sidenav.style.right = "-950px";
+            menuBtn.onclick = function(){
+                if(sidenav.style.right == "-950px"){
+                    sidenav.style.right ="0";
+                }
+                else{
+                    sidenav.style.right = "-950px";
+                }
+            }
+        </script> 
+
+<footer class="footer">
+<div class="footer-main">
+  <div class="foot1">
+    <h3>Contact us</h3><br/>
+    <a href="tel:6203390092" id="footnum"><i class="fa fa-phone" ></i> 620 3390092</a>
+    <p></p><i class="fa fa-location"> </i>  1904 Barham Blvd </p>
+    <p>Dodge City, Kansas 67801</p>   
+  </div>
+  <div class="foot2">
+    <h3>Follow us in Social Media</h3>
+    <ul class="fa-ul social-footer">
+        <li><a href="https://www.snapchat.com/add/alex_cruz90"><span class="fa-li" ><i class="fa fa-snapchat-ghost"></i></span>Snapchat</a></li>
+        <li><a href="https://www.facebook.com"><span class="fa-li"><i class="fa fa-facebook"></i></span>Facebook</a></li>
+        <li><a href="https://www.instagram.com"><span class="fa-li"><i class="fa fa-instagram"></i></span>Instagram</a></li>
+        <li><a href="https://www.youtube.com"><span class="fa-li"><i class="fa fa-youtube"></i></span>Youtube</a></li>
+    </ul>
+  </div>
+  
+</div>
+<br><hr>
+<div class="footer-copyright">OBD-Tech Solutions &copy; 2023</div>
+</footer>
+    </body>
+    <script>
+        let popup = document.getElementById("snap");
+        function openSnap(){
+          popup.classList.add("open-snap")
+        }
+        function closeSnap(){
+          popup.classList.remove("open-snap")
+        }
+     
+        let popupmap= document.getElementById("map");
+        function openMap(){
+          popupmap.classList.add("open-map")
+        }
+        function closeMap(){
+          popupmap.classList.remove("open-map")
+        }
+     
+        let popupcall= document.getElementById("call");
+        function openCall(){
+          popupcall.classList.add("op-call")
+        }
+        function closeCall(){
+          popupcall.classList.remove("op-call")
+        }
+      </script> 
+
+</html>

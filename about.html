@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Cruz Barber- About Us</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/80ea63a4b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <section id="navbar">
+            <img src="images/alex-logo.png" class="logo">
+            <div banertext class="banner-text">
+                 <div class="aboutus" id="aboutustitle">
+                        <h2>About Us</h2>
+                    </div>
+                <div class="cntrabout"><!--about us-->
+                    <div class="img-about">
+                        <img src="images/fam-iglesia.jpg" alt="">
+                    </div> 
+                    <div class="content-about">
+                       <h2>Who we are</h2>
+                       <div class="content">
+                           <p>We are a local family owned Barber-shop that prioritize our client relationships and confort, we take pride in offering superior customer satisfaction.We are a specialty Barber shop, serving traditional and non traditional haircuts and hair styles. Also offering beard grooming. We were born out of a desire to connect with people. We love a great conversation and we love great histories!</p>
+                            <p> Established in 2017 by Alejandro Cruz a Dodge City citizen for over 27 years. Alex is loving father, husband and son, who decided to start his own small business to provide for his family.
+                                                      Mr. Cruz received hisr Bachelor of  Administration and Finance Degree in 2008 from Dodge City High School. With education in Cosmetology from Community Collage, Dodge City, Kansas. Alex received the capacitation and training required to start working as a barber. Today he has over 5 years experience and dozens of loyal costumers who highly recommend his work.  
+                                <br> Mr. Cruz is devoted to his wife and four kids, nevertheless, Alex finds time also to be an active community member. Alex was part of the music band at his local church, Cathedral Of Our Lady Of Guadalupe.</p>
+                        </div>
+                                           
+                    </div>
+                    
+                </div>  <!--end aboutcontainer-->  
+            </div>
+        </section> <!--Termina la section de navbar-->     
+        <div id="sidenav">
+            <nav>
+                <ul class="links main-nav mobile-hide">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="contactus.html">GET AN APPOINTMENT</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="haircutalbum.html">HAIRCUTS</a></li>
+                </ul>    
+            </nav>
+        </div><!--Termina la section de Sidenavbar-->
+        <div id="menuBtn">
+            <img src="images/menu-icon.jpg" id="menu">
+        </div> <!--Termina menu btn icon-->
+       <!--script JS del boton menu side-->
+        <script> 
+            var menuBtn= document.getElementById("menuBtn")
+            var sidenav= document.getElementById("sidenav")
+             sidenav.style.right = "-950px";
+            menuBtn.onclick = function(){
+                if(sidenav.style.right == "-950px"){
+                    sidenav.style.right ="0";
+                }
+                else{
+                    sidenav.style.right = "-950px";
+                }
+            }
+        </script> 
+
+<footer class="footer"><!--footer principal-->
+<div class="footer-main">
+  <div class="foot1">
+    <h3>Contact us</h3><br/>
+    <a href="tel:6203390092" id="footnum"><i class="fa fa-phone" ></i> 620 3390092</a>
+    <p></p><i class="fa fa-location"> </i>  1904 Barham Blvd </p>
+    <p>Dodge City, Kansas 67801</p>   
+  </div>
+  <div class="foot2">
+    <h3>Follow us in Social Media</h3>
+    <ul class="fa-ul social-footer">
+        <li><a href="https://www.snapchat.com/add/alex_cruz90"><span class="fa-li" ><i class="fa fa-snapchat-ghost"></i></span>Snapchat</a></li>
+        <li><a href="https://www.facebook.com"><span class="fa-li"><i class="fa fa-facebook"></i></span>Facebook</a></li>
+        <li><a href="https://www.instagram.com"><span class="fa-li"><i class="fa fa-instagram"></i></span>Instagram</a></li>
+        <li><a href="https://www.youtube.com"><span class="fa-li"><i class="fa fa-youtube"></i></span>Youtube</a></li>
+    </ul>
+  </div>
+  
+</div>
+<br><hr>
+<div class="footer-copyright">OBD-Tech Solutions &copy; 2023</div>
+</footer>
+    </body>
+    
+
+</html>

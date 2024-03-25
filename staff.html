@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Cruz Barber Staff</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <section id="navbar">
+            <img src="images/alex-logo.png" class="logo">
+            <div banertext class="banner-text">
+                <div class="containerstaff" id="containerstaff">
+                    <div class="staff-tittle" id="staff-tittle">
+                        <h2>The Staff</h2>
+                    </div>
+                    <div class="staff">
+                        <div class="image-box" ><!-- class="card-img"> -->
+                            <img src="images/staff.jpg">
+                            <div class="card-body">
+                                <h2>Alexa Cruz </h2>
+                                <p id="staffp">Alex received her Bachelor of  Administration and Finance Degree in 2008 from Dodge City High School. He is a 2016 graduate of the Dodge City Community College from the Cosmetology program .</p>
+                                <a href="contactus.html"><span></span>Get a Haircut</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                                                           
+                </div><!--end containerstaff-->  
+            
+            </div><!--end banner text-->      
+        </section><!--end navbar-->    
+              
+        
+        <div id="sidenav">
+            <nav>
+                <ul class="links main-nav mobile-hide">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="contactus.html">GET AN APPOINTMENT</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="haircutalbum.html">HAIRCUTS</a></li>
+                </ul>    
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="images/menu-icon.jpg" id="menu">
+        </div>
+        <script>
+            var menuBtn= document.getElementById("menuBtn")
+            var sidenav= document.getElementById("sidenav")
+             sidenav.style.right = "-950px";
+            menuBtn.onclick = function(){
+                if(sidenav.style.right == "-950px"){
+                    sidenav.style.right ="0";
+                }
+                else{
+                    sidenav.style.right = "-950px";
+                }
+            }
+        </script> 
+
+        <footer class="footer">
+<div class="footer-main">
+  <div class="foot1">
+    <h3>Contact us</h3><br/>
+    <a href="tel:6203390092" id="footnum"><i class="fa fa-phone" ></i> 620 3390092</a>
+   <p></p><i class="fa fa-location"> </i>  1904 Barham Blvd </p>
+    <p>Dodge City, Kansas 67801</p>   
+  </div>
+  <div class="foot2">
+    <h3>Follow us in Social Media</h3>
+    <ul class="fa-ul social-footer">
+        <li><a href="https://www.snapchat.com/add/alex_cruz90"><span class="fa-li" ><i class="fa fa-snapchat-ghost"></i></span>Snapchat</a></li>
+        <li><a href="https://www.facebook.com"><span class="fa-li"><i class="fa fa-facebook"></i></span>Facebook</a></li>
+        <li><a href="https://www.instagram.com"><span class="fa-li"><i class="fa fa-instagram"></i></span>Instagram</a></li>
+        <li><a href="https://www.youtube.com"><span class="fa-li"><i class="fa fa-youtube"></i></span>Youtube</a></li>
+    </ul>
+  </div>
+  
+</div>
+<br><hr>
+<div class="footer-copyright">OBD-Tech Solutions &copy; 2023</div>
+</footer>
+    </body>
+</html>
